@@ -8,21 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var newTask : String = ""
+    @StateObject var listTask = Tasks()
+    @State var showAlert = false
     var body: some View {
-        VStack{
-            HStack(spacing: UIScreen.main.bounds.size.width/3){
-                Text("To-Do List")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .padding()
-               Button(action: {print("added")}){
-                Image(systemName: "plus")
-               }
-                .padding()
+            NavigationView {
+                List{
+                    HStack{
+                        Text("Add new Tasks")
+                            .font(.subheadline)
+                            .bold()
+                        TextField("Add a Task", text: $newTask)
+                        Button(action: {
+                            
+                            if(newTask == ""){
+                                showAlert = true
+                            }
+                            
+                            else{
+                                listTask.tasks.append(Task(taskName: newTask))
+                                newTask = ""
+                                print(listTask.tasks)
+                            }
+                        }){
+                            Image(systemName: "plus")
+                        }
+                    }
+                    ForEach(listTask.tasks){ task in
+                        TaskCell(task: task)
+                    }
+                }
+                .navigationBarTitle(Text("To-Do List"))
+                .alert(isPresented: $showAlert) { () -> Alert in
+                            Alert(title: Text("Add a To-Do List in the TextField "))
+                }
             }
-            
-            Spacer()
-        }
     }
 }
 

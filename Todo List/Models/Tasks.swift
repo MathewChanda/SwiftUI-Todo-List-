@@ -9,14 +9,14 @@ import Foundation
 import SwiftUI
 import Combine
 
-class Task {
+class Task : Identifiable{
     var taskName : String
-    
+    let id = UUID() 
     init(taskName : String) {
         self.taskName = taskName
     }
 }
 
 class Tasks : ObservableObject{
-    @Published var tasks : [Tasks] = [Tasks]()
+    @Published var tasks : [Task] = [Task]()
 }

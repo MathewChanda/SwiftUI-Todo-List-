@@ -14,6 +14,7 @@
 		AF0C49D2262A748100704733 /* Todo_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C49D1262A748100704733 /* Todo_ListTests.swift */; };
 		AF0C49DD262A748100704733 /* Todo_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C49DC262A748100704733 /* Todo_ListUITests.swift */; };
 		AF0C49F0262A769B00704733 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C49EF262A769B00704733 /* Tasks.swift */; };
+		AF0C49F8262A850900704733 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C49F7262A850900704733 /* TaskCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		AF0C49DC262A748100704733 /* Todo_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_ListUITests.swift; sourceTree = "<group>"; };
 		AF0C49DE262A748100704733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF0C49EF262A769B00704733 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		AF0C49F7262A850900704733 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			children = (
 				AF0C49C1262A748000704733 /* ContentView.swift */,
 				AF0C49BF262A748000704733 /* Todo_ListApp.swift */,
+				AF0C49F7262A850900704733 /* TaskCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			files = (
 				AF0C49C2262A748000704733 /* ContentView.swift in Sources */,
 				AF0C49F0262A769B00704733 /* Tasks.swift in Sources */,
+				AF0C49F8262A850900704733 /* TaskCell.swift in Sources */,
 				AF0C49C0262A748000704733 /* Todo_ListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
