@@ -1,3 +1,3 @@
 # SwiftUI-Todo-List 
 
-Just learning how to use SwiftUI 
+A simple to-do list application that will contain your to-do for the today which was written in SwiftUI and Swift. 
